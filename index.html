@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photography</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  </head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Photography</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contents</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Media</a></li>
+        </ul>
+
+        <video src="videos/leaf_water_drop7.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+                <h2>Download high quality images</h2>
+                <h3>Get Ready!!!</h3>
+                <p>POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL POMPI-KUNAL </p>
+        </div>
+
+        <ul class="social">
+            <li><a href=""><img src="images/facebook.png"></a></li>
+            <li><a href=""><img src="images/instagram.png"></a></li>
+            <li><a href=""><img src="images/twitter.png"></a></li>
+        </ul>
+        
+    </section>
+    
+    
+
+<script type="text/javascript">
+     var toggleButton = document.querySelector(".toggle");
+    toggleButton.addEventListener("click", function () {
+        toggleButton.classList.toggle("active");
+    });
+        $(".menu").hide();
+        
+        $(document).ready(function(){
+        
+        $(".toggle").click(function(){
+            $(".menu").animate({
+            height: 'toggle'}, "fast"
+            );
+        });
+          $(".menu").mouseenter(function () {
+            $(".menu").css("background-color", "#00cc99");
+          });
+          $(".menu").mouseleave(function () {
+            $(".menu").css("background-color", "#00cc99");
+          });
+    });
+</script>
+
+ <script src="js/jquery-2.1.4.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/script.js"></script>
+ <script src="anime/anime-master/lib/anime.min.js"></script>
+</body>
+</html>
+
