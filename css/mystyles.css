@@ -198,6 +198,13 @@
 	}
 }
 @media (max-width: 575.98px) {
+	.showcase {
+		padding: 30px;
+	}
+	.showcase header {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
 	.menu {
 		font-size: .6em;
 	}
