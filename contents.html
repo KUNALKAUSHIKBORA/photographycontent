@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>contents</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyles1.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  </head>
+<body id="contentBody">
+
+        <video src="videos/pexels-ambientnature-atmosphere-6446287 (1).mp4" autoplay muted loop></video>
+
+        <div class="overlay"></div>
+
+        <header>
+            <h2 class="logo">Contents</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contents</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Media</a></li>
+        </ul>
+
+        
+    <div class="image-container">
+     <div class="img-hover-zoom img-hover-zoom--colorize"><img class="img-fluid" src="images/IMG20210101052658.jpg"/></div>
+     <div class="img-hover-zoom img-hover-zoom--colorize"><img class="img-fluid" src="images/IMG20210101053753.jpg"/></div>
+     <div class="img-hover-zoom img-hover-zoom--colorize"><img class="img-fluid" src="images/IMG20210101053841.jpg"/></div>
+     <div class="img-hover-zoom img-hover-zoom--colorize"><img class="img-fluid" src="images/IMG20210101053902 main.jpg"/></div>
+     <div class="img-hover-zoom img-hover-zoom--colorize"><img class="img-fluid" src="images/IMG20210101053941.jpg"/></div>
+     <div class="img-hover-zoom img-hover-zoom--colorize"><img class="img-fluid" src="images/IMG20210101054657.jpg"/></div>
+     <div class="img-hover-zoom img-hover-zoom--colorize"><img class="img-fluid" src="images/IMG20210713181749.jpg"/></div>
+     <div class="img-hover-zoom img-hover-zoom--colorize"><img class="img-fluid" src="images/IMG20210716073056.jpg"/></div>
+     <div class="img-hover-zoom img-hover-zoom--colorize"><img class="img-fluid" src="images/IMG20210716081152.jpg"/></div>
+     <div class="img-hover-zoom img-hover-zoom--colorize"><img class="img-fluid" src="images/IMG20210717150019.jpg"/></div>
+    </div>
+
+        <ul class="socialFixed">
+            <li><a href=""><img src="images/facebook.png"></a></li>
+            <li><a href=""><img src="images/instagram.png"></a></li>
+            <li><a href=""><img src="images/twitter.png"></a></li>
+        </ul>
+        
+    
+    
+
+<script type="text/javascript">
+     var toggleButton = document.querySelector(".toggle");
+    toggleButton.addEventListener("click", function () {
+        toggleButton.classList.toggle("active");
+    });
+        $(".menu").hide();
+        
+        $(document).ready(function(){
+        
+        $(".toggle").click(function(){
+            $(".menu").animate({
+            height: 'toggle'}, "fast"
+            );
+        });
+          $(".menu").mouseenter(function () {
+            $(".menu").css("background-color", "#00cc99");
+          });
+          $(".menu").mouseleave(function () {
+            $(".menu").css("background-color", "#ffffff");
+          });
+    });
+</script>
+
+ <script src="js/jquery-2.1.4.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/script.js"></script>
+ <script src="anime/anime-master/lib/anime.min.js"></script>
+</body>
+</html>
+
+
