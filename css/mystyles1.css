@@ -60,7 +60,6 @@
 }
 .menu {
 	position: absolute;
-	top: 150px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -127,38 +126,135 @@
 }
 .img-hover-zoom {
 	padding: 10px;
+	overflow: hidden;
 }
 
-/* Colorize-zoom Container */
-.img-hover-zoom--colorize img {
-  transition: transform .5s, filter 1.5s ease-in-out;
-  filter: grayscale(100%);
+/* Quick-zoom Container */
+.img-hover-zoom--quick-zoom img {
+  transform-origin: 0 0;
+  transition: transform .25s, visibility .25s ease-in;
+  opacity: .5;
 }
 
 /* The Transformation */
-.img-hover-zoom--colorize:hover img {
-  filter: grayscale(0);
-  transform: scale(1.1);
+.img-hover-zoom--quick-zoom:hover img {
+  transform: scale(1.3);
+  opacity: 1;
 }
 
 video {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 29%;
+	height: 100%;
 	object-fit: cover;
-	opacity: .8;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #29AB87;
+	mix-blend-mode: overlay;
+}
+
+
+/* Medium & large Devices */
+@media (min-width: 768px) and (max-width: 978px) {
+	.menu {
+		font-size: .9em;
+	}
+	.menu li {
+		padding: 5px 9.4px;
+	}
+	.menu:hover {
+	letter-spacing: 1.7px;
+	}
+}
+
+/* Small Devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.menu {
+		font-size: .8em;
+	}
+	.menu li {
+		padding: 4px 8.3px;
+	}
+	.menu:hover {
+	letter-spacing: 1px;
+	}
+	.logo {
+		font-size: 4vw;
+	}
+	video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 .overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 29%;
-	background-color: #5DADEC;
+	height: 100%;
+	background-color: unset;
 	mix-blend-mode: overlay;
 }
+}
 
-
-
+/* Extra Small Devices */
+@media (max-width: 575.98px) {
+	#contentBody header {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	#contentBody .menu {
+		font-size: .6em;
+		left: 30px;
+	}
+	.menu li {
+		padding: 2.6px 6px;
+	}
+	.menu:hover {
+		letter-spacing: 1px;
+	}
+	.logo {
+		font-size: 4vw;
+	}
+	.toggle {
+		width: 30px;
+		height: 30px;
+		background-size: 20px;
+	}
+	.toggle.active {
+		background-size: 15px;
+	}
+	video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: unset;
+	mix-blend-mode: overlay;
+}
+.img-hover-zoom {
+	padding: 2px;
+}
+.socialFixed {
+	left: 30px;
+}
+}
